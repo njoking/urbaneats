@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="psf.css">
+    <title>Urban Fast Eats - About</title>
+</head>
+<body>
+    <header>
+        <h1>Urban Fast Eats</h1>
+
+        <button id="menu-btn">Menu</button>
+
+        <!-- Side menu -->
+        <div id="side-menu" class="side-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="details.html">Details</a></li>
+
+                <li><a href="about.html">About</a></li>
+            </ul>
+       
+    </header>
+
+    <section class="main-content">
+        <h2>About Us</h2>
+        <p>We are a new business dedicated to providing excellent services. Learn more about our journey and mission.</p>
+        <div class="about-details">
+            <img src="mwitu.jpg" alt="About Us Image">
+            <p>We are located at 1214 Colombia. All are welcome to our establishment!</p>
+            <p>We offer fast foods and restaurant services. All are welcome!</p>
+            <h3>Contact Information</h3>
+            <p>Email: urbanfasteats@gmail.com</p>
+            <p>Phone: +154 233 456</p>
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form action="submit.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="review-section">
+            <h3>Customer Reviews</h3>
+            <div class="customer-reviews">
+                <!-- Customer review form -->
+                <div class="review-form">
+                    <h4>Leave a Review</h4>
+                    <form action="submit-review.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Review:</label>
+                        <textarea id="review" name="review" required></textarea>
+
+                        <button type="submit">Submit Review</button>
+                    </form>
+                </div>
+
+                <!-- Display customer reviews -->
+                <div class="reviews">
+                    <!-- Reviews will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">      
+        <p>&copy; 2024 Urban Fast Eats. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
